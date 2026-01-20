@@ -1,0 +1,73 @@
+/* ================================
+   FOOTER MAIN STYLE
+================================ */
+.footer {
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Footer sections wrapper */
+.footer-section {
+  margin-bottom: 25px;
+}
+
+/* Section Titles */
+.footer-section h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #4caf50;        /* Attractive green heading */
+}
+
+/* Footer Text */
+.footer-section p {
+  margin: 5px 0;
+  font-size: 16px;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+.footer-section p:hover {
+  opacity: 1;
+  color: #4caf50;        /* Highlight on hover */
+  cursor: pointer;
+}
+
+/* Social icons hover style */
+.footer-section p span {
+  margin-right: 8px;
+}
+
+/* Bottom text */
+.footer-bottom {
+  margin-top: 25px;
+  padding-top: 12px;
+  border-top: 1px solid #444;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (min-width: 768px) {
+  .footer {
+    text-align: left;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+}

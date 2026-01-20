@@ -1,0 +1,98 @@
+/* MAIN NAVBAR WRAPPER */
+.nav {
+  position: fixed;          /* 🔥 navbar fix at top */
+  top: 0;
+  left: 0;
+  width: 100%;              /* full width */
+  height: 70px;
+
+  background: #1aa21a;
+  padding: 14px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  z-index: 1000;            /* top of all items */
+}
+
+/* NAV LINKS SECTION */
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Hover */
+.nav a:hover {
+  background: white;
+  color: #da8608;
+  transform: scale(1.05);
+}
+
+/* SEARCH SECTION */
+.search-container {
+  margin-left: 20px;
+}
+.search-container input {
+  padding: 8px 12px;
+  width: 230px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* ICONS (Profile, Wishlist, Bag) */
+.icons {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+.icons span:hover {
+  transform: scale(1.15);
+  transition: 0.2s;
+}
+
+/* LOGO */
+.logo img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .nav a {
+    margin: 5px 0;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .icons {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* PAGE CONTENT BELOW NAVBAR */
+body {
+  padding-top: 80px;   /* 👈 navbar height ke equal ya zyada */
+}

@@ -1,0 +1,111 @@
+.profile-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(120deg,#d6f6c9,#c0ffee,#f7ffef);
+  font-family: sans-serif;
+}
+
+.profile-card {
+  width: 380px;
+  padding: 35px;
+  background: rgba(255,255,255,0.65);
+  border-radius: 18px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* circle avatar */
+.profile-avatar-circle {
+  width: 110px;
+  height: 110px;
+  margin: auto;
+  border-radius: 50%;
+  background: #37d87822;
+  border: 3px solid #2fbf71;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.profile-avatar-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-avatar-circle span {
+  font-size: 45px;
+  font-weight: 600;
+  color: #2fbf71;
+}
+
+/* Name + username */
+h2 {
+  margin: 12px 0 4px;
+  font-size: 22px;
+}
+
+.sub {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Info lines */
+.info-list p {
+  display: flex;
+  justify-content: space-between;
+  background: #fff8;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.info-list span {
+  font-weight: 600;
+  color: #2fbf71;
+}
+
+/* Form */
+.edit-form input {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+/* Buttons */
+.btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px;
+  background: #2fbf71;
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover { background: #1e9d5a; }
+
+.btn-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.btn.secondary {
+  background: #ddd;
+  color: #444;
+}
+
+.btn.secondary:hover {
+  background: #bbb;
+}

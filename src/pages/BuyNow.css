@@ -1,0 +1,59 @@
+.buynow-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.buynow-card {
+  width: 380px;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.buynow-img {
+  width: 230px;
+  height: 230px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.qty-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.qty-box button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #0d8d3f;
+  color: white;
+  cursor: pointer;
+}
+
+.qty-box span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.confirm-order-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: #ee157a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.confirm-order-btn:hover {
+  background: #c21263;
+}

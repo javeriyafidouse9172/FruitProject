@@ -1,0 +1,17 @@
+.orders-container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.order-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.order-items p {
+  font-size: 14px;
+  margin: 4px 0;
+}

@@ -1,0 +1,204 @@
+/* ⭐ GLOBAL RESET + SMOOTH UI */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #b8f0b9; /* Softer green base */
+  color: #06350f;
+  overflow-x: hidden;
+}
+
+/* 🎯 HOME WRAPPER */
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+
+/* 🌟 FULL WIDTH SLIDER */
+.slider-wrapper {
+  width: 100%;
+  max-width: 1500px;
+  margin: 10px auto 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 6px 22px rgba(0,0,0,0.18);
+}
+
+/* FULLSCREEN LOOK */
+.slide-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* 📢 BANNER HERO */
+.banner {
+  width: 90%;
+  max-width: 1200px;
+  margin: 35px auto;
+  padding: 45px 30px;
+  text-align: center;
+
+  background: linear-gradient(145deg, #1eb84c, #0e7d3a);
+  border-radius: 18px;
+  
+  color: #fff;
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 8px 22px rgba(0,0,0,0.25);
+}
+
+.banner h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.banner p {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+/* 🛒 PRODUCT / CATEGORY GRID */
+.cards {
+  width: 100%;
+  max-width: 1300px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 28px;
+  padding: 5px 20px 20px;
+}
+
+/* 🧺 CARD ITEM */
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+
+  text-align: center;
+  transition: 0.28s ease;
+  cursor: pointer;
+
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.25);
+}
+
+/* IMAGE STYLE */
+.card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* 🏷️ CARD TEXT */
+.card h3 {
+  font-size: 19px;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  color: #0a3d18;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 14.5px;
+  margin-bottom: 14px;
+  color: #595959;
+}
+
+/* 🛍️ BUTTON STYLE */
+.shop-btn {
+  display: inline-block;
+  padding: 12px 15px;
+  width: 100%;
+  text-align: center;
+  background: #17a342;
+  color: white;
+  border-radius: 10px;
+  font-size: 15.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s;
+  letter-spacing: 0.3px;
+}
+
+.shop-btn:hover {
+  background: #0e7c2e;
+}
+
+/* 🔥 HOVER SHADOW */
+.shop-btn:active {
+  transform: scale(0.97);
+}
+
+/* 📱 RESPONSIVE BREAKPOINTS */
+@media (max-width: 1024px) {
+  .slide-img {
+    height: 340px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-img {
+    height: 270px;
+  }
+
+  .banner {
+    padding: 30px 18px;
+  }
+
+  .banner h1 {
+    font-size: 26px;
+  }
+
+  .banner p {
+    font-size: 15px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .card img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-img {
+    height: 220px;
+  }
+
+  .banner h1 {
+    font-size: 22px;
+  }
+
+  .banner p {
+    font-size: 14px;
+  }
+
+  .card img {
+    height: 120px;
+  }
+
+  .shop-btn {
+    font-size: 14px;
+  }
+}

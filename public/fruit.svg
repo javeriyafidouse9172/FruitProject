@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#f3ffe9"></circle>
+
+  <!-- Apple body -->
+  <path d="M22 26
+       C18 26, 14 30, 14 36
+       C14 45, 21 50, 26 50
+       C28.5 50, 30 49, 32 47
+       C34 49, 35.5 50, 38 50
+       C43 50, 50 45, 50 36
+       C50 30, 46 26, 42 26
+       C39 26, 36.5 27.5, 32 30
+       C27.5 27.5, 25 26, 22 26Z" fill="#ff4b4b"></path>
+
+  <!-- Highlight -->
+  <ellipse cx="24" cy="34" rx="4" ry="7" fill="#ff9090" opacity="0.7"></ellipse>
+
+  <!-- Stem -->
+  <rect x="30.5" y="16" width="3" height="10" rx="1.5" fill="#5a3b1e"></rect>
+
+  <!-- Leaf -->
+  <path d="M32 18
+       C38 14, 44 14, 48 18
+       C44 20, 38 22, 32 18Z" fill="#32a852"></path>
+</svg>

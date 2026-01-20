@@ -1,0 +1,229 @@
+/* ========= GLOBAL ========= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #b8f0b9;
+  overflow-x: hidden;
+}
+
+/* ========= FRUITS PAGE WRAPPER ========= */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 0 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========= SEARCH BAR ========= */
+.search-bar {
+  width: 420px;
+  padding: 13px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  border: 2px solid #12a140;
+  outline: none;
+  margin: 10px auto 35px;
+  display: block;
+  transition: 0.25s ease;
+  background: #fff;
+  text-align: center;
+}
+
+.search-bar:focus {
+  border-color: #06742a;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.20);
+}
+
+.search-bar::placeholder {
+  color: #6d6d6d;
+  font-size: 15px;
+}
+
+/* ========= PAGE TITLE ========= */
+.container h1 {
+  font-size: 40px;
+  color: #044d0e;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.container p {
+  font-size: 17px;
+  color: #3d6f3b;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* ========= PRODUCT GRID ========= */
+.fruit-grid {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;  /* 👈 FULL CENTER */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 280px));
+  gap: 32px;
+  justify-content: center;      /* 👈 CHILD ELEMENT CENTER */
+  padding: 15px 10px 80px;
+}
+
+/* ========= CARD ========= */
+.fruit-card {
+  width: 280px;                 /* 👈 CARDS SAME WIDTH */
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.15);
+  transition: .28s ease;
+}
+
+.fruit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.22);
+}
+
+/* ========= IMAGE ========= */
+.fruit-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* ========= NAME ========= */
+.fruit-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #063a16;
+  margin: 4px 0;
+}
+
+/* ========= DESC ========= */
+.fruit-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* ========= QTY CONTAINER ========= */
+.qty-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background: #179d45;
+  color: white;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.qty-btn:hover {
+  background: #0b6f2d;
+}
+
+.qty-value {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* ========= PRICE ========= */
+.price {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0e7a27;
+}
+
+/* ========= BUTTONS ========= */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn {
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  transition: .25s;
+}
+
+.add-btn {
+  background: #0e832e;
+  color: white;
+}
+
+.add-btn:hover {
+  background: #095820;
+}
+
+.buy-btn {
+  background: #ffb400;
+  color: white;
+}
+
+.buy-btn:hover {
+  background: #e29600;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 850px) {
+  .container h1 {
+    font-size: 32px;
+  }
+  .fruit-img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-bar {
+    width: 88%;
+    font-size: 14px;
+  }
+
+  .fruit-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+  }
+
+  .fruit-card {
+    width: 92%;
+  }
+
+  .fruit-img {
+    height: 140px;
+  }
+}
+.fruit-grid {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  justify-items: center;
+  align-items: start;
+  padding-bottom: 60px;
+}
+.fruit-card {
+  width: 260px;
+}
+   

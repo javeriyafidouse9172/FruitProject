@@ -1,0 +1,80 @@
+/*.header {
+  background: #44b34f;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+}
+
+.container h1 {
+  color: #6a1b9a;
+}*/
+/* ============================
+    FULL WIDTH NAVBAR
+============================ */
+.header {
+  width: 100%;                  /* 🔥 Full screen width */
+  background: #44b34f;          /* Same color */
+  padding: 15px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(252, 251, 251);
+  flex-wrap: nowrap;            /* 🔥 Prevent breaking into new line */
+  box-sizing: border-box;
+}
+
+/* Left side menu items */
+.header .menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;                    /* spacing */
+}
+
+.header .menu a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header .menu a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+    SEARCH BAR
+============================ */
+.search-bar {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  width: 250px;                 /* better width */
+  outline: none;
+}
+
+/* Right side icons */
+.header .icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ============================
+    PAGE HEADING COLOR
+============================ */
+.container h1 {
+  color: #6a1b9a;
+}
+
